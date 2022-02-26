@@ -1,0 +1,679 @@
+ body{
+     background-color: rgb(14, 11, 11);
+ }
+ 
+ /* external css: flickity.css for highlights*/
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel_hl {
+  background: rgb(14, 11, 11);
+  
+}
+
+.carousel-cell-hl {
+  width: 33%;
+  height: 280px;
+  margin-right: 5px;
+  /* background: #8C8; */
+  border-radius: 10px;
+  /* counter-increment: carousel-cell-hl; */
+  padding: 1%;
+}
+
+/* cell number */
+/* .carousel-cell-hl:before {
+  display: block;
+  text-align: center;
+  /* content: counter(carousel-cell); */
+  /* line-height: 200px; */
+  /* font-size: 80px; */
+  /* color: white;
+} */
+  
+ /* flickity ends here for HIGHLIGHTS*/
+ 
+ 
+ .highlights>img{
+     width: 100%;
+     height: 280px; 
+     border-radius: 5%;
+ }
+ 
+ .carousel_hl{
+    margin:auto;
+    width: 75%;
+  margin-bottom: 100px;
+
+}
+h2{
+    margin-left: 12.5%;
+    color: white;
+    
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+/* external css: flickity.css   for POPULAR PRODUCTS*/
+
+  * { box-sizing: border-box; }
+
+  body { font-family: sans-serif; }
+  
+  .carousel {
+    background: rgb(14, 11, 11);
+    margin-bottom: 150px;
+  }
+  
+  .carousel-cell {
+    width: 23%;
+    height: 360px;
+    margin-right: 10px;
+    background: rgb(14, 11, 11);
+    border-radius: 10px;
+    /* counter-increment: carousel-cell; */
+    padding: 3%;
+  }
+  
+  /* .carousel-cell.is-selected {
+    background: rgb(14, 11, 11);
+  } */
+  
+  /* cell number */
+  .carousel-cell:before {
+    display: block;
+    text-align: center;
+     /* content: counter(carousel-cell);  */
+     line-height: 200px;
+    font-size: 80px;
+    color: white; 
+
+   
+  }
+
+/* flickity ends here for POPULAR PRODUCTS*/
+
+.carousel{
+    margin:auto;
+    width: 75%;
+  margin-bottom: 150px;
+ 
+}
+
+
+.popular_products{
+    color: white;
+}
+
+  .popular_products>img{
+      
+      height: 180px;
+      /* align-items: auto; */
+      margin-top: 0px;
+
+  }
+  .popular_products>p{
+      text-align: justify;
+      text-justify: auto;
+  }
+
+
+
+  /* external css: flickity.css   for Mobile Phones*/
+
+  * { box-sizing: border-box; }
+
+  body { font-family: sans-serif; }
+  
+  .carousel-mp {
+    background: rgb(14, 11, 11);
+  }
+  
+  .carousel-cell-mp {
+    width: 23%;
+    height: 360px;
+    margin-right: 10px;
+    background: rgb(14, 11, 11);
+    border-radius: 5px;
+    /* counter-increment: carousel-cell; */
+    padding: 3%;
+  }
+  
+  /* .carousel-cell.is-selected {
+    background: rgbrgb(14, 11, 11);
+  } */
+  
+  /* cell number */
+  /* .carousel-cell:before {
+    display: block;
+    text-align: center;
+     /* content: counter(carousel-cell);  */
+     /* line-height: 200px;
+    font-size: 80px;
+    color: white; 
+
+   
+  } */ 
+
+/* flickity ends here for POPULAR PRODUCTS*/
+
+/* for phones */
+
+.carousel-mp{
+    margin:auto;
+    width: 75%;
+    margin-bottom: 150px;
+}
+
+
+.mobile_phones{
+    color: white;
+}
+
+  .mobile_phones>img{
+      
+      height: 180px;
+      /* align-items: auto; */
+      margin-top: 0px;
+
+  }
+  .mobile_phones>p{
+      text-align: justify;
+      text-justify: auto;
+  }
+
+
+/* for laptops & tablets */
+
+  .lap_tab{
+    color: white;
+}
+
+.lap_tab>img{
+      
+    height: 180px;
+    /* align-items: auto; */
+    margin-top: 0px;
+
+}
+.lap_tab>p{
+    text-align: justify;
+    text-justify: auto;
+}
+
+/* for audio */
+
+.audio{
+    color: white;
+}
+
+.audio>img{
+      
+    height: 180px;
+    /* align-items: auto; */
+    margin-top: 0px;
+
+}
+.audio>p{
+    text-align: justify;
+    text-justify: auto;
+}
+
+
+/* personal grooming */
+
+
+
+.personal_grooming{
+    color: white;
+}
+
+.personal_grooming>img{
+      
+    height: 180px;
+    /* align-items: auto; */
+    margin-top: 0px;
+
+}
+.personal_grooming>p{
+    text-align: justify;
+    text-justify: auto;
+}
+
+
+
+
+
+
+/*Apple at Croma starts here  */
+
+.carousel_ac {
+    background: rgb(14, 11, 11);
+    
+    
+  }
+  
+  .carousel-cell-ac {
+    width: 25%;
+    height: 330px;
+    margin-right: 5px;
+    /* background: #8C8; */
+    border-radius: 5%;
+    /* counter-increment: carousel-cell-hl; */
+    padding: 1%;
+  }
+  
+  /* cell number */
+  /* .carousel-cell-hl:before {
+    display: block;
+    text-align: center;
+    /* content: counter(carousel-cell); */
+    /* line-height: 200px; */
+    /* font-size: 80px; */
+    /* color: white;
+  } */
+    
+   /* flickity ends here for HIGHLIGHTS*/
+   
+   
+   .apple_croma>img{
+       width: 100%;
+       height: 330px; 
+       border-radius: 5%;
+   }
+   
+   .carousel_ac{
+      margin:auto;
+      width: 75%;
+      margin-bottom: 150px;
+  }
+
+
+  /* Apple at croma ends here */
+
+
+
+
+
+  /* Experiences in Spotlight starts here */
+
+  #ex{
+      display: flex;
+  }
+
+  .ex_sp{
+      width: 25%;
+      margin-right: 20px;
+  }
+
+  .ex_sp>img{
+   
+    width: 100%;
+       height: 300px; 
+       border-radius: 5%;
+  }
+
+
+  #below-ex{
+    display: flex;
+  }
+
+  .below-ex-sp{
+
+    width: 50%;
+    margin-right: 20px;
+  }
+
+  .below-ex-sp>img{
+   
+    width: 100%;
+       height: 300px; 
+       border-radius: 5%;
+  }
+
+
+ .personal_grooming> b{
+      
+      font-size: 21px;
+    
+      padding: 3%;
+  }
+
+
+  .links-container{
+      display: flex;
+      align-items: center;
+      background-color: grey;
+      height: 100px;
+  }
+
+    .link-item{
+        margin-right: 20px;
+    }
+
+    /* span{
+        font-size: 23px;
+        margin-left: 15px;
+    }
+    span{
+        font-size: 16px;
+        text-decoration: line-through;
+        margin-left: 15px;
+        margin-right: 20px;
+    } */
+   
+    span{
+        color: rgb(66, 248, 194);
+        /* text-decoration: underline; */
+        margin-left: 5px;
+    }
+    i{
+        color: rgb(224, 220, 220);
+        /* font-size: 21px; */
+        /* margin-right: 9px; */
+        justify-items: right;
+    }
+    
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    .wishlist-icon {
+        position: absolute;
+        background: #000;
+        padding: 5px;
+        /* color: #fff; */
+        right: -5px;
+        top: 10px;
+        font-size: 1.5rem;
+      }
+
+    /* external css: flickity.css   for Top bar*/
+
+  * { box-sizing: border-box; }
+
+  body { font-family: sans-serif; }
+  
+  .carousel-topbar {
+    background: rgba(70, 67, 67, 0.63);
+    margin-bottom: 150px;
+  }
+  
+  .carousel-cell-topbar {
+    width: 17%;
+    height: 80px;
+    /* margin-right: 10px; */
+    background: rgba(70, 67, 67, 0.63);
+    /* border-radius: 10px; */
+    /* counter-increment: carousel-cell; */
+    padding: 3%;
+    border-collapse: collapse;
+  }
+  
+  /* .carousel-cell-topbar.is-selected {
+    background:rgba(70, 67, 67, 0.63);
+  } */
+  
+  /* cell number */
+  /* .carousel-cell:before {
+    display: block;
+    text-align: center; */
+     /* content: counter(carousel-cell);  */
+     /* line-height: 200px;
+    font-size: 80px;
+    color: white; 
+
+   height: 80px;
+  } */
+
+/* flickity ends here for top bar*/
+
+.carousel-topbar{
+    margin:auto;
+    width: 75%;
+  margin-bottom: 100px;
+
+}
+
+
+
+#topbar{
+    background-color: rgba(70, 67, 67, 0.63);
+    height: 80px;
+    width: 100%;
+    margin-top: 12%;
+}
+
+
+
+
+
+/* external css: flickity.css for animation */
+
+ { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel-animation {
+  background: #EEE;
+  margin-bottom: 100px;
+}
+
+.carousel-cell-animation {
+  width: 100%;
+  height: 500px;
+  margin-right: 10px;
+  /* background: #8C8; */
+  /* border-radius: 5px;
+  /* counter-increment: gallery-cell; */
+} 
+
+/* cell number */
+/* .carousel-cell-animation:before {
+  display: block;
+  text-align: center;
+ content: counter(gallery-cell); 
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+} */ 
+
+.carousel-cell-animation>img{
+    width: 100%;
+    height: 500px;
+}
+
+
+
+/* first div after highlights */
+
+#ex{
+    display: flex;
+}
+#below-hl{
+    display: flex;
+    margin-bottom: 80px;
+}
+
+.first_div{
+    width: 33%;
+    margin-right: 20px;
+}
+
+.first_div>img{
+ 
+  width: 100%;
+     height: 280px; 
+     border-radius: 5%;
+}
+
+
+
+
+
+img:hover{
+    -webkit-transform: scale(0.9);
+      transform: scale(0.9);
+      opacity: 0.8;
+      -webkit-transition: opacity 800ms ease-in-out 0s;
+      transition: opacity 800ms ease-in-out 0s;
+      -webkit-transition: -webkit-transform 1s ease-in-out 0s;
+      transition: -webkit-transform 1s ease-in-out 0s;
+      transition: transform 1s ease-in-out 0s;
+      transition: transform 1s ease-in-out 0s, -webkit-transform 1s ease-in-out 0s;
+    cursor: pointer;
+  }
+
+
+
+  @media only screen and (min-width: 768px) and (max-width: 992px) {
+
+
+    .carousel-cell-hl {
+        width: 33%;}
+
+        .carousel-cell {
+            width: 23%;
+        }
+
+            .carousel-cell-mp {
+                width: 23%;
+            }
+            .carousel-cell-ac {
+                width: 25%;
+            }
+
+            .carousel-cell-topbar {
+                width: 17%;
+            }
+            .ex_sp{
+                width: 25%;
+            }
+            .below-ex-sp{
+
+                width: 50%;}
+  }
+
+
+  @media only screen and (min-width: 375px) and (max-width: 768px) {
+
+    #topbar{
+      margin-top: 0;
+    }
+    .carousel-mp{
+        margin:auto;
+        width: 75%;
+    }
+  
+    .carousel-cell-hl {
+        width: 66%;
+        margin-right: 10px;
+    }
+
+        .carousel-cell {
+            width: 46%;
+            margin-right: 10px;
+        }
+
+            .carousel-cell-mp {
+                width: 46%;
+                margin-right: 10px;
+            }
+            .carousel-cell-ac {
+                width: 50%;
+                margin-right: 10px;
+            }
+
+            .carousel-cell-topbar {
+                width: 34%;
+                margin-right: 10px;
+            }
+            
+            #below-ex{
+
+                display: block;
+            }
+
+            .below-ex-sp{
+                width: 100%;
+            }
+                #ex{
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                } 
+                .ex_sp{
+                    width: 95%;
+                    margin-right: 10px;
+                }
+                #below-hl{
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                }
+                
+                .first_div{
+                    width: 95%;
+                padding: 10%;
+            }
+  }
+
+  @media only screen and (min-width: 0px) and (max-width: 375px) {
+    #topbar{
+      margin-top: 0;
+    }
+    .carousel-cell-hl {
+        width: 100%;
+        margin-right: 10px;}
+
+        .carousel-cell {
+            width: 92%;
+            margin-right: 10px;
+        }
+
+            .carousel-cell-mp {
+                width: 92%;
+                margin-right: 10px;
+            }
+            .carousel-cell-ac {
+                width: 100%;
+                margin-right: 10px;
+            }
+
+            .carousel-cell-topbar {
+                width: 66%;
+                margin-right: 10px;
+            }
+
+            .ex_sp{
+                width: 100%;
+                margin-right: 10px;
+            }
+            #below-ex{
+
+               display: block;
+            }
+            .below-ex-sp{
+                width: 100%;
+            }
+
+                #ex{
+                    display: grid;
+                    grid-template-columns: repeat(1, 1fr);
+                }
+                #below-hl{
+                    display: block;
+                    width: 100%;
+                    
+                }
+                .first_div{
+                    width: 100%;
+                padding: 10%;}
+  }
+                
+  

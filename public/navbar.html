@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="shortcut icon"
+      href="https://lh3.googleusercontent.com/Hh_QKiJDmg2LQdL2aJ3cw_hBnWyH6dEqaFsiOgLNAZ6XnpPVuvrBCSeNzKQA8GCk519H=s180"
+      type="image/x-icon"
+    />
+    <script
+      src="https://kit.fontawesome.com/d7bc18a32d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./CSS/navbar.css" />
+  </head>
+
+  <body>
+    <div id="container"></div>
+  </body>
+</html>
+<script type="module">
+  import navbar from "./components/navbar.js";
+
+  console.log("navbar:", navbar);
+
+  let container = document.getElementById("container");
+  container.innerHTML = navbar();
+
+  document.getElementById("gvddButton").addEventListener("click", show);
+
+  function show() {
+    window.location.href = "order.html";
+  }
+  console.log("count:", res);
+</script>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>croma - Address</title>
+    <link
+      rel="shortcut icon"
+      href="https://lh3.googleusercontent.com/Hh_QKiJDmg2LQdL2aJ3cw_hBnWyH6dEqaFsiOgLNAZ6XnpPVuvrBCSeNzKQA8GCk519H=s180"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://lh3.googleusercontent.com/Hh_QKiJDmg2LQdL2aJ3cw_hBnWyH6dEqaFsiOgLNAZ6XnpPVuvrBCSeNzKQA8GCk519H=s180"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../CSS/navbar.css" />
+    <link rel="stylesheet" href="../CSS/footer.css" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <style>
+      .cirBox {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: white;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        color: white;
+        justify-content: center;
+      }
+      .payproBar {
+        display: flex;
+        align-items: center;
+        margin: 15px;
+      }
+      .headLin {
+        height: 5px;
+        background-color: #00e9bf;
+        width: 10vw;
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <header><div id="container"></div></header>
+    <main>
+      <div id="mainCon">
+        <div id="headBar" class="flex" style="justify-content: space-evenly">
+          <h2 id="cartValue">Order Summary</h2>
+          <div class="payproBar">
+            <div class="cirBox" style="background-color: #00e9bf"
+              ><i class="fas fa-check"></i
+            ></div>
+            <div class="headLin"></div>
+            <div class="cirBox" style="background-color: #ffb900">2</div>
+            <div class="headLin" style="background-color: #878787"></div>
+            <div class="cirBox" style="background-color: #878787">3</div>
+          </div>
+        </div>
+        <div id="subDiv" class="flex" style="justify-content: space-between">
+          <div id="cardPro" class="flexV">
+            <div id="proTab"><!-- cart product will showen here --></div>
+            <div class="card">
+              <h2>Contact Information</h2>
+              <div class="adrForm">
+                <div id="preBox1"
+                  ><label for="prefix">Title</label>
+                  <select name="prefix" id="prefix">
+                    <option value="Mr">Mr</option>
+                    <option value="Mrs">Mrs</option>
+                    <option value="miss">Miss</option>
+                    <option value="ms">Ms</option>
+                    <option value="Dr">Dr</option>
+                    <option value="Prof">Prof</option>
+                  </select></div
+                >
+                <div id="preBox2"
+                  ><label for="fName">First Name</label>
+                  <input
+                    type="text"
+                    name="fName"
+                    id="fName"
+                    placeholder="Enter First Name"
+                /></div>
+                <div id="preBox3"
+                  ><label for="mName">Middle Name</label>
+                  <input
+                    type="text"
+                    name="mName"
+                    id="mName"
+                    placeholder="Enter Middle Name"
+                /></div>
+                <div id="preBox4"
+                  ><label for="lName">Last Name</label>
+                  <input
+                    type="text"
+                    name="lName"
+                    id="lName"
+                    placeholder="Enter Last Name"
+                /></div>
+                <div id="preBox5"
+                  ><label for="Email">Email ID</label>
+                  <input
+                    type="email"
+                    name="Email"
+                    id="Email"
+                    placeholder="Enter Email ID"
+                /></div>
+                <div id="preBox6"
+                  ><label for="mob">Mobile Number</label>
+                  <input
+                    type="tel"
+                    name="mob"
+                    id="mob"
+                    placeholder="Enter Mobile Number"
+                /></div>
+              </div>
+            </div>
+            <div class="card">
+              <h2>GST Information(optional)</h2>
+              <div class="gst"
+                ><label for="gstn">GST Number</label>
+                <input
+                  type="text"
+                  name="gstn"
+                  id="gstn"
+                  placeholder="Enter GST Number"
+                />
+                <button id="vali">VALIDATE GST Number</button></div
+              >
+            </div>
+          </div>
+          <div id="sideData" class="flexV">
+            <div id="paymentDet" class="card">
+              <h2> Payment Details </h2>
+              <div class="minFlex">
+                <p>Item total</p> <p id="price">₹73,899.00</p>
+              </div>
+              <div class="minFlex">
+                <p>Delivery cost at <b style="color: #00e9bf">400049</b> </p>
+                <p>Free</p>
+              </div>
+              <hr />
+              <div class="minFlex">
+                <p>Total price</p> <p id="totalCost">₹73,899.00</p>
+              </div>
+              <button class="checkout" onclick="openPay()"
+                >SELECT PAYMENT</button
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div id="szcontainer"></div>
+    </footer>
+  </body>
+  <script src="../js/adr.js"></script>
+  <script type="module">
+    import navbar from "../components/navbar.js";
+
+    //  console.log("navbar:",navbar)
+
+    let container = document.getElementById("container");
+    container.innerHTML = navbar();
+  </script>
+  <!-- footer -->
+  <script type="module">
+    import footer from "../components/footer.js";
+
+    // console.log("footer:",footer)
+
+    let container = document.getElementById("szcontainer");
+    container.innerHTML = footer();
+  </script>
+</html>

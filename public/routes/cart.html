@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>croma - cart</title>
+    <link
+      rel="shortcut icon"
+      href="https://lh3.googleusercontent.com/Hh_QKiJDmg2LQdL2aJ3cw_hBnWyH6dEqaFsiOgLNAZ6XnpPVuvrBCSeNzKQA8GCk519H=s180"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://lh3.googleusercontent.com/Hh_QKiJDmg2LQdL2aJ3cw_hBnWyH6dEqaFsiOgLNAZ6XnpPVuvrBCSeNzKQA8GCk519H=s180"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../CSS/navbar.css" />
+    <link rel="stylesheet" href="../CSS/footer.css" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+  </head>
+  <body>
+    <header><div id="container"></div></header>
+
+    <main>
+      <div id="mainCon">
+        <div id="headBar" class="flex">
+          <h2 id="cartValue">Your Cart ( 3 items ) ₹110,979.00</h2>
+          <button
+            class="checkout"
+            style="width: auto; margin-left: 50px"
+            onclick="openPay()"
+            >CHECKOUT</button
+          >
+        </div>
+        <div id="subDiv" class="flex" style="justify-content: space-between">
+          <div id="cardPro" class="flexV">
+            <!-- cart product will showen here -->
+          </div>
+          <div id="sideData" class="flexV">
+            <div id="delry" class="card">
+              <h2 style="font-size: 16px"
+                >Delivery option for <b style="color: #00e9bf">400049</b></h2
+              >
+              <div class="radDel flex"
+                ><input type="radio" name="Delivery" id="Standard" /><img
+                  alt="dark-delivery"
+                  data-speedsize-src="https://media.croma.com/image/upload/v1637828519/Croma%20Assets/UI%20Assets/Standard-Delivery-Black-Theme.svg"
+                  loading="lazy"
+                  src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1637828519/Croma%20Assets/UI%20Assets/Standard-Delivery-Black-Theme.svg/mxw_1284,f_auto"
+                  data-processed="true"
+                />Standard Delivery</div
+              >
+              <div class="radDel flex"
+                ><input type="radio" name="Delivery" id="pickup" /><img
+                  alt="dark-delivery"
+                  data-speedsize-src="https://media.croma.com/image/upload/v1637828617/Croma%20Assets/UI%20Assets/Store_Pickup_Black_Theme.svg"
+                  loading="lazy"
+                  src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1637828617/Croma%20Assets/UI%20Assets/Store_Pickup_Black_Theme.svg/mxw_1284,f_auto"
+                  data-processed="true"
+                />Available For Pickup Croma, Croma Sion</div
+              >
+              <div class="radDel flex"
+                ><input type="radio" name="Delivery" id="zip" /><img
+                  alt="dark-delivery"
+                  data-speedsize-src="https://media.croma.com/image/upload/v1637828675/Croma%20Assets/UI%20Assets/Zip_Delivery_Black_Theme.svg"
+                  loading="lazy"
+                  src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1637828675/Croma%20Assets/UI%20Assets/Zip_Delivery_Black_Theme.svg/mxw_1284,f_auto"
+                  data-processed="true"
+                />ZIP Delivery by 1:00 pm tomorrow</div
+              >
+            </div>
+            <div id="promo" class="card">
+              <div id="promoBox" class="flex">
+                <input
+                  type="text"
+                  name="coupan"
+                  id="coupan"
+                  placeholder="Enter coupan code"
+                />
+                <button id="apply" onclick="promoAply()">apply</button>
+              </div>
+            </div>
+            <div id="paymentDet" class="card">
+              <h2> Payment Details </h2>
+              <div class="minFlex">
+                <p>Item total</p> <p id="price">₹73,899.00</p>
+              </div>
+              <div class="minFlex">
+                <p>Delivery cost at <b style="color: #00e9bf">400049</b> </p>
+                <p>Free</p>
+              </div>
+              <hr />
+              <div class="minFlex">
+                <p>Total price</p> <p id="totalCost">₹73,899.00</p>
+              </div>
+              <button class="checkout" onclick="openPay()">CHECKOUT</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="emCart">
+        <h1 id="emOne">Your Cart is empty</h1>
+        <p id="emTwo">Looks like you havent made your choice yet</p>
+        <img src="/img/Empty.png" alt="" / style="margin: 30px;">
+        <a href="/index.html" id="emTree">EXPLORE NOW</a>
+      </div>
+    </main>
+    <footer>
+      <div id="szcontainer"></div>
+    </footer>
+  </body>
+  <!-- navbar -->
+  <script type="module">
+    import navbar from "/components/navbar.js";
+
+    //  console.log("navbar:",navbar)
+
+    let container = document.getElementById("container");
+    container.innerHTML = navbar();
+  </script>
+  <!-- footer -->
+  <script type="module">
+    import footer from "/components/footer.js";
+
+    // console.log("footer:",footer)
+
+    let container = document.getElementById("szcontainer");
+    container.innerHTML = footer();
+  </script>
+  <script src="/js/cart.js" defer></script>
+</html>

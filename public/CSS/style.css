@@ -1,0 +1,265 @@
+body {
+  background-color: #121212;
+}
+main {
+  margin-top: 200px;
+}
+* {
+  font-family: "Gotham", sans-serif;
+  color: #ffffff;
+  transition: 0.5s;
+  /* font-size: 1.5rem;
+        line-height: 1.3; */
+}
+.flex {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+.flexV {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#cardPro {
+  width: 70%;
+}
+#sideData {
+  width: 28%;
+}
+.card {
+  border: solid 1px #353535;
+  padding: 5%;
+  width: 90%;
+  margin: 10px 0px 10px 0px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+#coupan {
+  width: 100%;
+  border: none;
+  height: 100%;
+  color: black;
+  padding-left: 10px;
+}
+#coupan:focus {
+  outline: none;
+}
+#apply {
+  border: none;
+  height: 100%;
+  color: black;
+  font-size: 20px;
+}
+#promoBox {
+  height: 35px;
+  background: white;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.minFlex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.minFlex > p {
+  margin: 5px 0px 5px 0px;
+}
+.checkout {
+  background: #00e9bf;
+  color: #103749;
+  text-align: center;
+  height: 35px;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #00e9bf;
+  font-weight: 700;
+}
+.radDel {
+  margin: 5px 0px 5px 0px;
+}
+.radDel > * {
+  margin: 0px 10px 0px 0px;
+}
+#headBar {
+  justify-content: center;
+  padding: auto !important;
+  border: solid 1px #353535;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+#mainCon {
+  width: 95%;
+  margin: auto;
+}
+.proCard {
+  border: solid 1px #353535;
+  padding: 5%;
+  width: 90%;
+
+  margin: 10px 0px 10px 0px;
+
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.proCard > img {
+  width: 130px;
+  height: 130px;
+}
+.proCard > div {
+  margin-left: 10px;
+}
+#sideData {
+  justify-content: flex-start;
+}
+#subDiv {
+  align-items: flex-start;
+}
+.prdetail > h2 {
+  font-size: 18px;
+}
+.del {
+  align-self: flex-start;
+  /* height: 100%; */
+  color: #00e9bf;
+  margin: 10px;
+}
+p + p {
+  font-weight: 700;
+}
+#paymentDet > hr {
+  height: 1px;
+  border: none;
+  width: 90%;
+  background: #353535;
+}
+select {
+  color: black;
+  background: white;
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 700;
+}
+input {
+  color: black;
+  background: white;
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 18px;
+  border: none;
+  /* font-weight: 700; */
+}
+option {
+  background-color: #121212;
+  color: white;
+}
+.adrForm {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+label {
+  display: block;
+}
+#vali {
+  background: #353535;
+  border: none;
+  border-radius: 10px;
+  margin: 2% 0% 2% 0%;
+  width: 100%;
+  padding: 10px 0px 10px 0px;
+}
+.controlCard {
+  display: flex;
+  justify-content: space-between;
+}
+.controlCard > h2 {
+  margin: 0%;
+}
+.controlCard > button {
+  background: none;
+  border: none;
+}
+
+.payCard {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2s, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+#payBox1 {
+  grid-area: 1 / 1 / 2 / 3;
+}
+#payBox2 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+#payBox3 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+.off {
+  display: none !important;
+}
+input[type="radio"] {
+  color: unset;
+  background: unset;
+  width: unset;
+  height: unset;
+  border-radius: unset;
+  font-size: unset;
+  border: unset;
+}
+#emCart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#emOne {
+  margin: 5px;
+  font-weight: 300;
+  font-size: 30px;
+}
+#emTree {
+  color: #00e9bf;
+  font-weight: bold;
+}
+.rotate {
+  transform: rotate(180deg);
+  color: #00e9bf;
+}
+.card:hover {
+  border: solid 1px #00e9bf;
+  transform: scale(1.05);
+}
+.proCard:hover {
+  border: solid 1px #00e9bf;
+  transform: scale(1.05);
+}
+
+/* animantion */
+@media screen and (max-width: 1024px) {
+  #subDiv {
+    flex-direction: column;
+  }
+  #cardPro {
+    width: 100%;
+  }
+  #sideData {
+    width: 100%;
+  }
+}

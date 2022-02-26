@@ -1,0 +1,720 @@
+body {
+   height: 1200px;
+   position: fixed;
+   position: sticky;
+   margin: 0;
+ }
+ /* #gvddButton{
+   width: 6%;
+   border: 1px solid white;
+   height: 80%;
+   margin-top: 1px;
+  
+ } */
+ /* #szorder{
+   border: 1px solid red;
+
+ } */
+ #szsign{
+   border-right: 1px solid white;
+   width: 100%;
+
+ }
+ #cartValu {
+  position: absolute;
+  width: 25px;
+  margin: -20px;
+  font-size: 23px;
+  border-radius: 50%;
+  text-align: center;
+  height: 25px;
+  /* background: #00e9bf; */
+}
+
+ #sznavbar {
+  width: 100%;
+  height: 200px;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+   /* border: 1px solid red; */
+   color: white;
+   
+ }
+ 
+ #sznavbar>hr{
+  border-color: rgb(53, 53, 53);
+ }
+ @media only screen and (min-width: 375px) and (max-width: 768px) {
+   #sznavbar  {
+     display: none;
+       /* grid-template-columns: repeat(2, 1fr); */
+     }
+   }
+
+   @media only screen and (min-width: 0px) and (max-width: 375px) {
+     #sznavbar  {
+       display: none;
+       /* width: 100%; */
+       /* grid-template-columns: repeat(1, 1fr); */
+     }
+   }
+   /* @media only screen and (min-width: 375px) and (max-width: 768px) {
+   #szlocation   {
+     display: none;
+       /* grid-template-columns: repeat(2, 1fr); */
+/* }
+   }   */
+
+/* @media only screen and (min-width: 375px) and (max-width: 768px) {
+  #szlo {
+    grid-area: croma;
+  }
+  #szmenu {
+    grid-area: menu;
+  }
+  #szinput {
+    grid-area: input;
+  }
+  #szorder {
+    grid-area: order;
+  }
+  #szsign {
+    grid-area: sign;
+  }
+  #szcart {
+    grid-area: cart;
+  }
+  #szlogo {
+    display: grid;
+    grid-template-areas:
+      "croma croma menu menu . . . ."
+      "input input input input order order sign sign cart cart"; */
+    /* 'menu footer footer footer footer footer'; */
+  /* }
+  #szlocation {
+    display: none; */
+    /* grid-template-columns: repeat(2, 1fr); */
+  /* }
+} */
+/* #szlogo{
+     display: grid;
+       grid-template-columns: repeat(2, 1fr);
+       grid-template-rows: repeat(2,1fr);
+     } */
+
+/* .item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+display: grid;
+grid-template-areas:
+ 'header header header header header header'
+ 'menu main main main right right'
+ 'menu footer footer footer footer footer';
+} */
+
+#sznavbar > div {
+  display: flex;
+  /* border: 1px solid red; */
+  /* height: 150px; */
+}
+#szlogo {
+  height: 110px;
+}
+
+h1 {
+  margin-left: 5%;
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+#szpin {
+  /* margin-left: 5%; */
+  display: flex;
+}
+
+#szpin > p {
+  margin-top: 10%;
+  margin-left: 13px;
+  font-size: 20px;
+}
+
+#szpencil {
+  margin-top: 12%;
+  margin-left: 10px;
+}
+
+#szlo {
+  /* border: 1px solid red; */
+  margin-left: 8%;
+  margin-top: 2%;
+  display: flex;
+  margin-bottom: 10%;
+  cursor: pointer;
+  height: 30px;
+}
+
+#szlocation > #szmap {
+  margin-left: 80%;
+  /* margin-top: 20px; */
+  display: flex;
+  /* border: 1px solid red; */
+}
+
+#szmap {
+  margin-top: 10px;
+}
+
+#szmenu {
+  margin-left: 5%;
+  margin-top: 2%;
+  font-size: 25px;
+  cursor: pointer;
+  /* border: 1px solid red; */
+  visibility: visible;
+  overflow: visible;
+}
+
+#szsubmenu {
+  display: none;
+  margin-right: 20%;
+  /* border: 1px solid red; */
+  visibility: visible;
+  overflow: visible;
+}
+#szsubmenu #szsubmenu > ul {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  max-width: 350px;
+  top: 0;
+  left: -100%;
+  background: #242526;
+  display: block;
+  padding: 50px 10px;
+  line-height: 50px;
+  overflow-y: auto;
+  box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.18);
+  transition: all 0.3s ease;
+  overflow: visible;
+}
+/* #szmenu>#szsubmenu{
+display: block;
+position: absolute;
+} */
+#szmenu button a {
+  text-decoration: none;
+  color: white;
+
+  /* border: 1px solid red; */
+}
+
+#szmenu button:hover #szsubmenu {
+  display: block;
+  position: absolute;
+  background-color: rgb(18, 18, 18);
+
+  margin-top: 40px;
+
+  font-size: 20px;
+  /* border: 1px solid red; */
+  /* width: 17%; */
+}
+
+#szmenu button #szsubmenu ul {
+  display: block;
+}
+
+ 
+
+ #szmenu button #szsubmenu ul {
+   display: block;
+
+
+
+ }
+
+ #szmenu button #szsubmenu li {
+   display: block;
+   margin-top: 20px;
+   cursor: pointer;
+   text-align: start;
+   display: flex;
+   
+   line-height: 25px;
+   color: white;
+   /* margin-right: 90%; */
+ 
+
+ }
+
+ #szmenu button #szsubmenu li :hover {
+   color: #00e9bf;
+   /* background-color: white; */
+ }
+
+
+
+ #szmenu>button {
+
+   margin-top: 2%;
+   font-size: 30px;
+   color: white;
+   background-color: transparent;
+   border: 0;
+   cursor: pointer;
+   text-decoration: none;
+ }
+
+
+
+
+ #szinput>input[type=text] {
+   width: 200%;
+ }
+
+ #szlogo>#szsearch>#szframe {
+   background-color: black;
+   width: 180%;
+   border-radius: 10px;
+   /* border: 1px solid red; */
+   background: white;
+   margin-top: 5%;
+   margin-left: 40%;
+
+ }
+
+ #szlogo>#szsearch>#szframe>input[type=text] {
+   height: 65px;
+   width: 200%;
+   border: 0px;
+   font-size: 20px;
+   padding: 1px;
+   padding-left: 20px;
+   background: transparent;
+    /* border: 1px solid red; */
+ }
+
+ #szsearch>#szframe>#szsearch-btn {
+   width: 25%;
+   background-color: #00e9bf;
+   border-radius: 10px;
+
+ }
+
+ #szsearch>#szframe>#szsearch-btn>button {
+   width: 10%;
+   height: 43px;
+   background-color: #00e9bf;
+   border: 0px;
+   font-size: 25px;
+   font-weight: 20;
+   padding-left: 15px;
+   padding-top: 20px;
+
+ }
+
+ #szframe {
+   display: flex;
+ }
+
+ #szorder {
+   margin-left: 24%;
+   margin-top: 23px;
+   /* border: 1px solid red; */
+ }
+
+ #szorder>button {
+   margin-left: 5%;
+   margin-top: 20px;
+   font-size: 20px;
+   color: white;
+   background-color: transparent;
+   border: 0;
+   cursor: pointer;
+ }
+
+ #szsign {
+   margin-left: 3%;
+   margin-top: 24px;
+   /* border: 1px solid red; */
+ }
+
+ #szsign>button {
+   margin-top: 20px;
+   font-size: 20px;
+   color: white;
+   background-color: transparent;
+   border: 0;
+   cursor: pointer;
+ }
+
+ #szhr {
+   margin-top: 20px;
+
+ }
+ #szhr>a{
+   text-decoration: none;
+ }
+ #szhr>hr {
+   /* margin-left: 70px; */
+   border-color: white;
+
+ }
+
+ #szcart {
+   display: flex;
+   margin-top: 45px;
+   margin-left: 30px;
+   cursor: pointer;
+   /* border: 1px solid red; */
+ }
+
+ #szcart>button {
+
+   margin-left: 13px;
+   font-size: 20px;
+   margin-bottom: 183px;
+   color: white;
+   background-color: transparent;
+   border: 0;
+   cursor: pointer;
+ }
+
+ /* hr {
+   color: rgb(53,53,53);
+   border-color: rgb(53, 53, 53);
+ } */
+
+ p2{
+  font-size: 20px;
+}
+
+li .greater-than {
+  float: right;
+  float: inline-end;
+  margin-left: 10px;
+}
+
+#sub-menu2 {
+  display: none;
+}
+
+#hover_me #sub-menu2 {
+  background-color: black;
+  color: white;
+}
+
+#hover_me:hover #sub-menu2 {
+  position: absolute;
+  display: block;
+  margin-top: -65px;
+  margin-left: 259px;
+  background-color: rgb(18, 18, 18);
+  width: 150%;
+  overflow: scroll;
+  height: 650px;
+  font-family: Gotham, serif;
+}
+
+/* #sub-menu2   {
+display: flex;
+}   */
+#sub-menu3 {
+  display: none;
+}
+
+#hover_me #sub-menu3 {
+  color: white;
+}
+
+#hover_me1:hover #sub-menu3 {
+  position: absolute;
+  display: block;
+  margin-top: -112px;
+  margin-left: 259px;
+  background-color: rgb(18, 18, 18);
+  width: 150%;
+  overflow: scroll;
+  height: 650px;
+  font-family: Gotham, serif;
+}
+
+#sub-menu4 {
+  display: none;
+}
+
+#hover_me2 #sub-menu4 {
+  color: white;
+}
+
+#hover_me2:hover #sub-menu4 {
+  position: absolute;
+  display: block;
+  margin-top: -125px;
+  margin-left: 259px;
+  background-color: rgb(18, 18, 18);
+  width: 150%;
+  overflow: scroll;
+  height: 650px;
+  font-family: Gotham, serif;
+}
+
+#szsubmenu:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  background: rgb(18, 18, 18);
+  left: 20px;
+  top: -10px;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+#sub-menu5 {
+  display: none;
+}
+
+#hover_me3 #sub-menu5 {
+  /* background-color:  rgb(18,18,18); */
+  color: white;
+}
+
+#hover_me3:hover #sub-menu5 {
+  position: absolute;
+  display: block;
+  margin-top: -155px;
+  margin-left: 259px;
+  background-color: rgb(18, 18, 18);
+  width: 150%;
+  overflow: scroll;
+  height: 650px;
+  font-family: Gotham, serif;
+}
+#sub-menu6 {
+  display: none;
+}
+
+#hover_me4 #sub-menu6 {
+  /* background-color:  rgb(18,18,18); */
+  color: white;
+}
+
+#hover_me4:hover #sub-menu6 {
+  position: absolute;
+  display: block;
+  margin-top: -200px;
+  margin-left: 259px;
+  background-color: rgb(18, 18, 18);
+  width: 150%;
+  overflow: scroll;
+  height: 650px;
+  font-family: Gotham, serif;
+}
+#sub-menu7 {
+  display: none;
+}
+
+#hover_me5 #sub-menu7 {
+  /* background-color:  rgb(18,18,18); */
+  color: white;
+}
+
+#hover_me5:hover #sub-menu7 {
+  position: absolute;
+  display: block;
+  margin-top: -83%;
+  margin-left: 259px;
+  background-color: rgb(18, 18, 18);
+  width: 150%;
+  overflow: scroll;
+  height: 650px;
+  font-family: Gotham, serif;
+}
+#sub-menu8 {
+  display: none;
+}
+
+#hover_me6 #sub-menu8 {
+  /* background-color:  rgb(18,18,18); */
+  color: white;
+}
+
+#hover_me6:hover #sub-menu8 {
+  position: absolute;
+  display: block;
+  margin-top: -97%;
+  margin-left: 259px;
+  background-color: rgb(18, 18, 18);
+  width: 150%;
+  overflow: scroll;
+  height: 650px;
+  font-family: Gotham, serif;
+}
+#sub-menu9 {
+  display: none;
+}
+
+#hover_me7 #sub-menu9 {
+  /* background-color:  rgb(18,18,18); */
+  color: white;
+}
+
+#hover_me7:hover #sub-menu9 {
+  position: absolute;
+  display: block;
+  margin-top: -99%;
+  margin-left: 259px;
+  background-color: rgb(18, 18, 18);
+  width: 150%;
+  overflow: scroll;
+  height: 650px;
+  font-family: Gotham, serif;
+}
+#sub-menu10 {
+  display: none;
+}
+
+#hover_me8 #sub-menu10 {
+  /* background-color:  rgb(18,18,18); */
+  color: white;
+}
+
+#hover_me8:hover #sub-menu10 {
+  position: absolute;
+  display: block;
+  margin-top: -112%;
+  margin-left: 259px;
+  background-color: rgb(18, 18, 18);
+  width: 150%;
+  overflow: scroll;
+  height: 650px;
+  font-family: Gotham, serif;
+}
+#sub-menu12 {
+  display: none;
+}
+
+#hover_me10 #sub-menu12 {
+  /* background-color:  rgb(18,18,18); */
+  color: white;
+}
+
+#hover_me10:hover #sub-menu12 {
+  position: absolute;
+  display: block;
+  margin-top: -142%;
+  margin-left: 259px;
+  background-color: rgb(18, 18, 18);
+  width: 150%;
+  overflow: scroll;
+  height: 650px;
+  font-family: Gotham, serif;
+}
+#sub-menu11 {
+  display: none;
+}
+
+#hover_me9 #sub-menu11 {
+  /* background-color:  rgb(18,18,18); */
+  color: white;
+}
+
+#hover_me9:hover #sub-menu11 {
+  position: absolute;
+  display: block;
+  margin-top: -127%;
+  margin-left: 259px;
+  background-color: rgb(18, 18, 18);
+  width: 150%;
+  overflow: scroll;
+  height: 650px;
+  font-family: Gotham, serif;
+}
+#sub-menu13 {
+  display: none;
+}
+
+#hover_me11 #sub-menu13 {
+  /* background-color:  rgb(18,18,18); */
+  color: white;
+}
+
+#hover_me11:hover #sub-menu13 {
+  position: absolute;
+  display: block;
+  margin-top: -158%;
+  margin-left: 259px;
+  background-color: rgb(18, 18, 18);
+  width: 150%;
+  overflow: scroll;
+  height: 650px;
+  font-family: Gotham, serif;
+}
+#sub-menu14 {
+  display: none;
+}
+
+#hover_me12 #sub-menu14 {
+  /* background-color:  rgb(18,18,18); */
+  color: white;
+}
+
+#hover_me12:hover #sub-menu14 {
+  position: absolute;
+  display: block;
+  margin-top: -173%;
+  margin-left: 259px;
+  background-color: rgb(18, 18, 18);
+  width: 150%;
+  overflow: scroll;
+  height: 650px;
+  font-family: Gotham, serif;
+}
+#sub-menu15 {
+  display: none;
+}
+
+#hover_me13 #sub-menu15 {
+  /* background-color:  rgb(18,18,18); */
+  color: white;
+}
+
+#hover_me13:hover #sub-menu15 {
+  position: absolute;
+  display: block;
+  margin-top: -188%;
+  margin-left: 259px;
+  background-color: rgb(18, 18, 18);
+  width: 150%;
+  overflow: scroll;
+  height: 650px;
+  font-family: Gotham, serif;
+}
+#sub-menu16 {
+  display: none;
+}
+
+#hover_me14 #sub-menu16 {
+  /* background-color:  rgb(18,18,18); */
+  color: white;
+}
+
+#hover_me14:hover #sub-menu16 {
+  position: absolute;
+  display: block;
+  margin-top: -203%;
+  margin-left: 259px;
+  background-color: rgb(18, 18, 18);
+  width: 150%;
+  overflow: scroll;
+  height: 650px;
+  font-family: Gotham, serif;
+}

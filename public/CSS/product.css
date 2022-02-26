@@ -1,0 +1,521 @@
+body {
+  width: 99%;
+  margin: 0;
+  margin: auto;
+  font-family: "Gotham", sans-serif;
+  box-sizing: border-box;
+  background-color: #121212;
+}
+#gvmainBox {
+  width: 100%;
+  /* border: 1px solid red; */
+  margin-top: 12%;
+}
+#gvupperBox {
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 2rem 0;
+  display: flex;
+  /* border: 1px solid blue; */
+}
+#gvupperBox > div {
+  margin-left: 2%;
+  margin-top: 2%;
+  width: 10%;
+  height: 50%;
+  /* border: 1px solid red; */
+}
+#gvupperBox > div > a {
+  padding-top: 20px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+/* righttttt */
+#gvphoneDetails {
+  height: 1200px;
+  width: 100%;
+  margin-top: 10px;
+  /* border: 3px solid green; */
+  display: flex;
+  margin-bottom: 4%;
+}
+
+/* small boxes */
+#gviconBox {
+  height: 50px;
+  width: 90%;
+  /* border: 2px solid blue; */
+  display: flex;
+  justify-content: end;
+  padding-top: 5%;
+  margin-bottom: 3%;
+}
+/* #gvtopbuttonsgv {
+    display: flex;
+    flex-wrap: wrap;
+    color: grey;
+    margin: auto;
+    width: 75%;
+    margin-top: 100px;
+    border: 4px dotted red;
+  } */
+#gvtopbuttonsgv > a {
+  margin-left: 10px;
+  color: grey;
+  text-decoration: none;
+  font-size: 14px;
+}
+#gvmainBoxgv {
+  display: flex;
+  flex-wrap: wrap;
+  /* border: 4px dotted red; */
+  margin: auto;
+  width: 50%;
+  height: 700px;
+  margin-top: 1%;
+}
+
+.gvleftmainBoxgv {
+  height: 75%;
+  width: 30%;
+  /* border: 4px dotted lightgreen; */
+  margin: auto;
+  margin-top: 1px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  overflow: hidden;
+}
+.gvmiddlemainBoxgv {
+  height: 75%;
+  width: 60%;
+  /* border: 4px dotted blue; */
+  margin: auto;
+  margin-top: 1px;
+}
+#gvCompare {
+  height: 130px;
+  width: 80%;
+  /* border: 4px dotted blue; */
+  margin-left: 16%;
+  color: white;
+  display: flex;
+  justify-content: end;
+}
+#gvCompare:hover{
+  cursor: pointer;
+}
+.gvmiddlemainBoxgv > img {
+  height: 90%;
+  width: 100%;
+}
+.gvrightmainBoxgv {
+  height: 100%;
+  width: 40%;
+  /* border: 4px solid yellow; */
+  margin: auto;
+}
+#gvdescriptionBoxgv {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 100%;
+  height: 300px;
+  /* border: 5px solid green; */
+  margin-top: 4%;
+  padding: 5%;
+  background-color: rgba(243, 241, 241, 0.815);
+}
+.gvleftDescgv {
+  width: 40%;
+  height: 100%;
+  text-align: justify;
+  margin: auto;
+  /* border: 5px solid green; */
+}
+.gvmiddleBargv {
+  height: 100%;
+  width: 2px;
+  background-color: black;
+  margin: auto;
+  /* border: 5px solid green; */
+}
+.gvrightDescgv {
+  width: 40%;
+  height: 100%;
+  margin: auto;
+  /* border: 5px solid green; */
+}
+/* b {
+    font-size: 19px;
+    margin-bottom: 10px;
+  } */
+/* p {
+    font-size: 15px;
+    color: grey;
+    font-weight: lighter;
+  } */
+
+.gvswiper-containergv {
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+  width: 90%;
+  /* border: 5px solid green; */
+  padding-left: 26%;
+}
+
+/* element.style {
+    height: 74px;
+    margin-bottom: 5px;
+  } */
+/* .thumbsSliderActiveClass.thumbVideoClass, .thumbsSliderActiveClass img {
+  border: 2px solid #51cccc;
+  } */
+
+@media screen and (max-width: 992px) {
+  .gvthumbSlideClass {
+    width: 62px;
+    overflow: hidden;
+  }
+}
+.gvthumbSlideClassgv img {
+  width: 100%;
+  max-width: 100%;
+}
+.gvthumbVideoClassgv {
+  background: #fff;
+  width: 70px;
+  height: 86.5px;
+  position: relative;
+  overflow: hidden;
+  /* border: 5px solid green; */
+}
+.gvthumbSlideClassgv:hover{
+    border: 1px solid #00c09e !important;
+
+}
+.gvthumbVideoClassgv .gvplayThumbnailVideogv,
+.gvthumbVideoClassgv .gvproductThumbVideogv {
+  top: 50%;
+  left: 50%;
+  z-index: 9;
+  margin: auto;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border: none;
+}
+.gvthumbVideoClassgv .gvplayThumbnailVideogv {
+  width: 24px;
+  height: 24px;
+}
+
+.gvthumbSlideClassgv {
+  width: 70px;
+  height: 86.5px;
+  position: relative;
+}
+
+.arrow {
+  /* do not remove */
+  border: solid grey;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+/* img:hover {
+  border: black;
+  background-color: turquoise;
+} */
+
+input:hover {
+  border: none;
+}
+#gvdetails {
+  margin: 2px;
+  /* border: 4px solid yellow; */
+  width: 50%;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  /* height: 100%; */
+  /* overflow: scroll; */
+  color: white;
+}
+#gvdetails > div:nth-child(1) {
+  /* border: 1px solid red; */
+  height: 140px;
+  font-weight: 100;
+  line-height: 28px;
+  font-size: 16px;
+  font-family: "Gotham", serif;
+}
+.gvchecked {
+  color: #00e9bf;
+  font-size: 40px;
+}
+#gvPrice {
+  display: flex;
+  width: 568px;
+  height: 40px;
+  margin: 0 55px 16px 0;
+  padding: 8px 35px 7px 25px;
+  border-radius: 8px;
+  border: #353535 1px solid;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+#gvPrice > div {
+  margin-left: 4%;
+}
+
+#gvRupay {
+  display: flex;
+  width: 100%;
+}
+#gvRupay > div:nth-child(1) {
+  width: 20%;
+}
+#gvRupay > div:nth-child(2) {
+  width: 75%;
+  margin-left: 0;
+}
+#gvDelivery {
+  width: 568px;
+  height: 80px;
+  margin: 28px 55px 16px 0;
+  padding: 8px 35px 7px 25px;
+  border-radius: 8px;
+  border: #353535 1px solid;
+  align-items: center;
+  /* justify-content: space-between; */
+  line-height: 2px;
+}
+#gvButtonbox {
+  margin-top: 10px;
+  height: 40px;
+  display: flex;
+}
+#gvAddcart {
+  width: 30%;
+  border-radius: 10px;
+}
+#gvBuy {
+  background-color: #00c09e;
+  width: 30%;
+  border-radius: 10px;
+}
+#gvBuy:hover {
+  cursor: pointer;
+  background-color: #4b8177;
+}
+.gvIcon:hover {
+  cursor: pointer;
+}
+#gvAddcart:hover {
+  cursor: pointer;
+  color: #00c09e !important;
+  border: 1px solid #00c09e !important;
+}
+#gvNote {
+  width: 568px;
+  height: 120px;
+  margin: 28px 55px 16px 0;
+  padding: 1px 35px 7px 25px;
+  border-radius: 8px;
+  border: 2px solid white;
+  padding-bottom: 5%;
+  /* align-items: center; */
+  font-size: 17px;
+}
+#gvItemsfeature {
+  height: 100%;
+  /* border: 1px solid green; */
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+.gvAccordion-item {
+  color: white;
+  border: 4px solid #00c09e;
+  border-radius: 7px;
+  margin-bottom: 16px;
+  padding: 1rem;
+}
+.gvAccordian-link {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+.gvAccordian-link i {
+  color: #f0ffff;
+  padding: 0.5rem;
+}
+.gvAccordian-link .fa-angle-up {
+  display: none;
+}
+.gvDetails {
+  max-height: 0;
+  overflow: hidden;
+  position: relative;
+  transition: max-height 900ms;
+}
+.gvDetails > ul li::marker {
+  color: #00e9bf;
+}
+.gvDetails::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 94%;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.gvAccordion-item:target .gvDetails {
+  max-height: 3600px;
+}
+.gvAccordion-item:target .gvAccordian-link .fa-angle-down {
+  display: none;
+}
+.gvAccordion-item:target .gvAccordian-link .fa-angle-up {
+  display: block;
+}
+.gvReview {
+  width: 20%;
+  height: 45px;
+  border-radius: 30px;
+  /* do not remove */
+  border: 1px solid #00e9bf;
+  margin-left: 20px;
+  align-items: center;
+}
+.gvReview > h3 {
+  text-align: center;
+}
+.gvReviewdetails {
+  width: 90%;
+  margin: auto;
+  height: 120px;
+  margin-top: 20px;
+  /* border: 1px solid red; */
+  display: flex;
+}
+.gvImgreview {
+  width: 20%;
+  height: 60%;
+  /* border: 1px solid red; */
+}
+.gvImgreview > img {
+  padding-left: 50%;
+}
+.gvImgright {
+  width: 80%;
+  height: 100%;
+  margin-left: 0;
+  color: white;
+  /* border: 1px solid red; */
+}
+#gvAccessoriesbox {
+  height: 600px;
+  width: 100%;
+  /* border: 2px solid green; */
+  margin-top: 6%;
+}
+#gvHeading {
+  color: white;
+  margin-left: 5%;
+  /* border: 2px solid green; */
+}
+#gvaccBox {
+  height: 90%;
+  width: 100%;
+  margin: auto;
+  /* border: 2px solid green; */
+}
+
+/* external css: flickity.css */
+
+* {
+  box-sizing: border-box;
+}
+
+.carousel-cell {
+  width: 25%;
+  margin: 0;
+  /* margin-right: 10px; */
+  /* background: rgb(44, 44, 44); */
+  background-color: #121212;
+  border-radius: 5px;
+  /* counter-increment: carousel-cell; */
+  padding: 3%;
+  /* border: 1px solid blue; */
+  height: 500px;
+}
+
+.carousel-cell.is-selected {
+  background: #121212;
+}
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  /* content: counter(carousel-cell);  */
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+/* flickity ends here */
+.carousel {
+  margin: auto;
+  width: 90%;
+  /* border: 3px solid red; */
+  height: 500px;
+}
+
+.popular_products {
+  color: white;
+  /* border: 1px solid yellow; */
+  height: 400px;
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.popular_products > img {
+  height: 180px;
+  /* align-items: auto; */
+  margin-top: 0px;
+}
+.popular_products > p {
+  text-align: justify;
+  text-justify: auto;
+}
+#gvaccBox {
+  margin-top: 5%;
+  padding: 5px;
+}

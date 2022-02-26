@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>croma - Payment</title>
+    <link
+      rel="shortcut icon"
+      href="https://lh3.googleusercontent.com/Hh_QKiJDmg2LQdL2aJ3cw_hBnWyH6dEqaFsiOgLNAZ6XnpPVuvrBCSeNzKQA8GCk519H=s180"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://lh3.googleusercontent.com/Hh_QKiJDmg2LQdL2aJ3cw_hBnWyH6dEqaFsiOgLNAZ6XnpPVuvrBCSeNzKQA8GCk519H=s180"
+      type="image/x-icon"
+    />s
+    <link rel="stylesheet" href="../CSS/navbar.css" />
+    <link rel="stylesheet" href="../CSS/footer.css" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <style>
+      .cirBox {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: white;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+        color: white;
+        justify-content: center;
+      }
+      .payproBar {
+        display: flex;
+        align-items: center;
+        margin: 15px;
+      }
+      .headLin {
+        height: 5px;
+        background-color: #00e9bf;
+        width: 10vw;
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <header><div id="container"></div></header>
+    <main>
+      <div id="mainCon">
+        <div id="headBar" class="flex" style="justify-content: space-evenly">
+          <h2 id="cartValue">Make Payment</h2>
+          <div class="payproBar">
+            <div class="cirBox" style="background-color: #00e9bf"
+              ><i class="fas fa-check"></i
+            ></div>
+            <div class="headLin"></div>
+            <div class="cirBox" style="background-color: #00e9bf"
+              ><i class="fas fa-check"></i
+            ></div>
+            <div class="headLin" style="background-color: #00e9bf"></div>
+            <div class="cirBox" style="background-color: #ffb900">3</div>
+          </div>
+        </div>
+        <div id="subDiv" class="flex" style="justify-content: space-between">
+          <div id="cardPro" class="flexV">
+            <div class="card">
+              <div class="controlCard">
+                <h2> Gift card /Voucher</h2>
+                <button onclick="openBox('.gst')" class="gstBtn"
+                  ><i class="fas fa-chevron-up"></i
+                ></button>
+              </div>
+              <div class="gst off" style="margin-top: 20px">
+                <input
+                  type="text"
+                  name="gstn"
+                  id="gstn"
+                  placeholder="Enter Voucher Number"
+                />
+                <button
+                  id="vali"
+                  onclick='window.open("../order.html", "_self");'
+                  >VALIDATE Voucher Number</button
+                ></div
+              >
+            </div>
+            <div class="card">
+              <div class="controlCard">
+                <h2><i class="far fa-credit-card"></i> Payament</h2>
+                <button onclick="openBox('.creditPay')" class="creditPayBtn"
+                  ><i class="fas fa-chevron-up"></i
+                ></button>
+              </div>
+              <div class="creditPay off">
+                <div class="payCard">
+                  <div id="payBox1"
+                    ><label for="Card_no">CREDIT CARD NO</label>
+                    <input
+                      type="text"
+                      name="Card_no"
+                      id="Card_no"
+                      placeholder="**** **** **** **** 1234"
+                  /></div>
+                  <div id="payBox2"
+                    ><label for="EXP">EXP</label>
+                    <input type="text" name="EXP" id="EXP" placeholder="MM/YY"
+                  /></div>
+                  <div id="payBox3"
+                    ><label for="CVV">CVV</label>
+                    <input type="text" name="CVV" id="CVV" placeholder="123"
+                  /></div>
+                </div>
+                <button
+                  class="checkout"
+                  style="margin: 10px 0px 10px 0px"
+                  onclick="window.open('../order.html', '_self')"
+                  ><i class="fas fa-money-check-alt"></i> PAY</button
+                >
+              </div>
+            </div>
+            <!-- kuch bhi -->
+          </div>
+          <div id="sideData" class="flexV">
+            <div id="paymentDet" class="card">
+              <h2> Order Summary</h2>
+              <div class="minFlex">
+                <p>Item total</p> <p id="price">₹73,899.00</p>
+              </div>
+              <div class="minFlex">
+                <p>Delivery cost at <b style="color: #00e9bf">400049</b> </p>
+                <p>Free</p>
+              </div>
+              <hr />
+              <div class="minFlex">
+                <p>Total price</p> <p id="totalCost">₹73,899.00</p>
+              </div>
+              <hr />
+              <p style="text-align: center"
+                >By placing the order you have read & agreed to</p
+              >
+              <p style="text-align: center; color: #00e9bf"
+                >Terms and condition</p
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div id="szcontainer"></div>
+    </footer>
+  </body>
+  <script src="../js/pay.js"></script>
+  <script type="module">
+    import navbar from "../components/navbar.js";
+
+    //  console.log("navbar:",navbar)
+
+    let container = document.getElementById("container");
+    container.innerHTML = navbar();
+  </script>
+  <!-- footer -->
+  <script type="module">
+    import footer from "../components/footer.js";
+
+    // console.log("footer:",footer)
+
+    let container = document.getElementById("szcontainer");
+    container.innerHTML = footer();
+  </script>
+</html>

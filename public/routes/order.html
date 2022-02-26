@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>croma - Order</title>
+    <link
+      rel="shortcut icon"
+      href="https://lh3.googleusercontent.com/Hh_QKiJDmg2LQdL2aJ3cw_hBnWyH6dEqaFsiOgLNAZ6XnpPVuvrBCSeNzKQA8GCk519H=s180"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://lh3.googleusercontent.com/Hh_QKiJDmg2LQdL2aJ3cw_hBnWyH6dEqaFsiOgLNAZ6XnpPVuvrBCSeNzKQA8GCk519H=s180"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../CSS/navbar.css" />
+    <link rel="stylesheet" href="../CSS/footer.css" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+  </head>
+  <body>
+    <header><div id="container"></div></header>
+
+    <main>
+      <div id="emCart">
+        <h1 id="emOne">order placed successfully</h1>
+        <p id="emTwo">Order ID: MCBCR6956134416</p>
+        <img src="../img/done.png" alt="" / style="margin: 30px;">
+        <a href="../index.html" id="emTree">EXPLORE NOW</a>
+      </div>
+    </main>
+    <footer>
+      <div id="szcontainer"></div>
+    </footer>
+  </body>
+</html>
+<!-- navbar -->
+<script type="module">
+  import navbar from "../components/navbar.js";
+
+  //  console.log("navbar:",navbar)
+
+  let container = document.getElementById("container");
+  container.innerHTML = navbar();
+</script>
+<!-- footer -->
+<script type="module">
+  import footer from "../components/footer.js";
+
+  // console.log("footer:",footer)
+
+  let container = document.getElementById("szcontainer");
+  container.innerHTML = footer();
+</script>

@@ -1,0 +1,963 @@
+body {
+  background: rgb(14, 13, 13);
+  color: white;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* display: flex; */
+}
+body *  {
+  font-family: Gotham serif;
+}
+
+#mainRaus {
+  display: flex;
+  gap: 10px;
+  /* border: 1px solid red; */
+  /* height: 250px; */
+  width: 85%;
+  margin: auto;
+  margin-top: 10%;
+}
+
+#mainRaus div {
+  /* padding: 0.1%; */
+  margin-top: 38px;
+
+  display: flex;
+  width: 25%;
+  height: 100%;
+  border-radius: 15px;
+  /* border: 1px solid red; */
+}
+.imgNewRaus {
+  border-radius: 15px;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  /* vertical-align: baseline; */
+}
+#mobileRaus {
+  font-size: 25px;
+  margin-left: 90px;
+}
+/* radio div css */
+.slidingImageRaus {
+  /* display: flex; */
+  width: 100%;
+  /* width: 400%; */
+  height: 400px;
+  margin-top: 75px;
+  overflow: hidden;
+  /* border: 3px solid brown; */
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+
+
+/* radio div css end  */
+
+/* img div css  sliding start */
+.sliderRaus {
+  width: 100%;
+  height: 500px;
+  display: flex;
+}
+.sliderRaus input {
+  display: none;
+}
+
+.slideRaus {
+  width: 100%;
+  transition: 2s;
+}
+.slideRaus img {
+  /* width: 200%; */
+  height: 380px;
+}
+
+/* img div sliding css  end  */
+
+/* manual css sliding start  */
+
+.manualnavigationRaus {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  margin-top: -150px;
+  width: 100%;
+}
+
+.manualBtnRaus {
+  border: 1px solid rgb(129, 118, 118);
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.manualBtnRaus:not(:last-child) {
+  margin-right: 10px;
+}
+
+.manualBtnRaus:hover {
+  background: white;
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+#radio2:checked ~ .first {
+  margin-left: -100%;
+}
+#radio3:checked ~ .first {
+  margin-left: -200%;
+}
+#radio4:checked ~ .first {
+  margin-left: -300%;
+}
+#radio5:checked ~ .first {
+  margin-left: -400%;
+}
+#radio6:checked ~ .first {
+  margin-left: -500%;
+}
+#radio7:checked ~ .first {
+  margin-left: -600%;
+}
+
+/* manual css sliding end */
+
+/* navigation css auto start */
+
+.navigationAutoRaus {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  margin-top: 350px;
+  width: 100%;
+}
+
+.navigationAutoRaus div {
+  border: 1px solid rgb(129, 118, 118);
+  transition: 1s;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+/* .navigationAutoRaus div:hover{
+    background: black;
+    cursor: pointer;
+} */
+
+.navigationAutoRaus div:not(:last-child) {
+  margin-right: 10px;
+}
+
+#radio1:checked ~ .navigationAutoRaus .autoBtnRaus1 {
+  background: white;
+}
+#radio2:checked ~ .navigationAutoRaus .autoBtnRaus2 {
+  background: white;
+}
+#radio3:checked ~ .navigationAutoRaus .autoBtnRaus3 {
+  background: white;
+}
+#radio4:checked ~ .navigationAutoRaus .autoBtnRaus4 {
+  background: white;
+}
+#radio5:checked ~ .navigationAutoRaus .autoBtnRaus5 {
+  background: white;
+}
+#radio6:checked ~ .navigationAutoRaus .autoBtnRaus6 {
+  background: white;
+}
+#radio7:checked ~ .navigationAutoRaus .autoBtnRaus7 {
+  background: white;
+}
+/* navigation css auto end */
+
+/* croma advantages div css start */
+#cromAdvanRaus {
+  font-size: 25px;
+  margin-left: 72px;
+}
+.cromaAdvantageRaus {
+  display: flex;
+  gap: 10px;
+  /* border: 1px solid rgb(105, 31, 31); */
+  height: 120px;
+  width: 90%;
+  margin: auto;
+}
+
+.cromaAdvantageRaus div {
+  /* padding: 0.1%; */
+  /* margin-top: 38px; */
+
+  display: flex;
+  width: 25%;
+  height: 100%;
+  /* border-radius: 15px; */
+  /* border: 1px solid rgb(95, 38, 38);   */
+}
+.imgCromaAvanRaus {
+  border-radius: 8px;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  /* vertical-align: baseline; */
+}
+
+/* explore div img css  start*/
+
+#exploreRaus {
+  display: flex;
+  gap: 15px;
+  /* border: 1px solid rgb(105, 31, 31); */
+  height: 350px;
+  width: 90%;
+  margin: auto;
+  margin-top: 45px;
+}
+
+#exploreRaus div {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  cursor: pointer;
+  /* border: 1px solid yellow; */
+}
+
+.imgExploreShopRaus {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 15px;
+}
+
+/* explore div img css end */
+
+/* buy now div css start */
+
+#buyNowRaus {
+  display: flex;
+  /* gap:15px; */
+  /* border: 1px solid rgb(105, 31, 31); */
+  height: 350px;
+  width: 90%;
+  margin: auto;
+  margin-top: 45px;
+  cursor: pointer;
+}
+
+.imgBuyNowRaus {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 15px;
+}
+
+/* buy now div css end */
+
+/* galaxy vides css start */
+#galaxyZFoldRaus {
+  display: flex;
+  gap: 35px;
+  /* border: 1px solid rgb(105, 31, 31); */
+  height: 350px;
+  width: 90%;
+  margin: auto;
+  margin-top: 75px;
+  /* cursor: pointer; */
+}
+#galaxyZFoldRaus .foldVideosRaus {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  cursor: pointer;
+  /* border: 1px solid yellow; */
+  position: relative;
+  /* padding-top: 56.25%; */
+}
+
+/* .foldVideosR{
+} */
+.wrappedIframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 10px;
+}
+/* galaxy vides css end */
+
+/* croma advantages div css end*/
+
+/* Shop by price start css */
+#shopByPriceNameRaus {
+  font-size: 25px;
+  margin-left: 72px;
+}
+* {
+  box-sizing: border-box;
+}
+
+.carouselRaus {
+  /* background:#eee ; */
+  /* border: 2px solid brown; */
+  margin: auto;
+  width: 90%;
+}
+.shopByContainerRaus {
+  width: 23%;
+  height: 120px;
+  margin-right: 10px;
+  /* margin-right: 10px; */
+  /* border: 2px solid yellow; */
+  justify-content: center;
+  align-items: center;
+  /* background: rgb(44, 44, 44); */
+  /* counter-increment: carousel-cell; */
+  padding: 0%;
+}
+.shopByContainerRaus:before {
+  display: block;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+
+  /* content: counter(carousel-cell);  */
+  line-height: 120px;
+  font-size: 80px;
+  /* color: white; */
+}
+.mySliderShopPriceRaus {
+  width: 100%;
+  height: 100%;
+
+  /* box-sizing: border-box; */
+  /* border: 2px solid rgb(219, 141, 154); */
+  align-items: center;
+}
+
+.ImageSliderRaus {
+  height: 100%;
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+/* shopp by price iamge end css */
+
+/* small mobile product start css */
+.carouselSamllPhoneRaus {
+  top: 75px;
+  margin: auto;
+  width: 90%;
+  height: 450px;
+  /* border: 2px solid red; */
+}
+
+.phomeCellRaus {
+  width: 25%;
+  margin: 0;
+
+  border-radius: 5px;
+  padding: 3%;
+  height: 450px;
+  /* border: 2px solid yellow; */
+}
+.phomeCellRaus:before {
+  display: block;
+  text-align: center;
+  line-height: 180px;
+  font-size: 70px;
+  color: white;
+}
+.smallMobileRaus {
+  color: white;
+  /* border: 1px solid brown; */
+  height: 390px;
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.imgSmallRaus {
+  height: 180px;
+  margin-top: 0%;
+  /* padding: 2%; */
+}
+.nokiaPhoneRaus,
+.mobilePriceRaus {
+  text-align: justify;
+  text-justify: auto;
+}
+.checkedRaus {
+  color: #00e9bf;
+  font-size: 40px;
+}
+.addToCartRaus {
+  background: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  /* border: none; */
+}
+/* small mobile product end css */
+
+/* <!-- Shop by price end css --> */
+
+/* shop by features css static  start  */
+#shopNameByRaus {
+  margin-top: 150px;
+  font-size: 25px;
+  margin-left: 72px;
+}
+#shopByFeaturesRaus {
+  display: flex;
+  width: 90%;
+  height: 230px;
+  gap: 10px;
+
+  margin: auto;
+  margin-top: 50px;
+}
+.featuresRaus {
+  display: flex;
+  width: 25%;
+  height: 100%;
+  /* border: 1px solid blue; */
+}
+.imgFeaturesRaus {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* shop by features css static  end  */
+
+/* shop by features css end */
+
+/* shop by brand name css starts */
+
+.carouselBrRaus {
+  /* background:#eee ; */
+  /* border: 2px solid brown; */
+  margin: auto;
+  width: 90%;
+}
+.shopByBrandRaus {
+  width: 23%;
+  height: 120px;
+  margin-right: 10px;
+  /* margin-right: 10px; */
+  /* border: 2px solid yellow; */
+  justify-content: center;
+  align-items: center;
+  /* background: rgb(44, 44, 44); */
+  /* counter-increment: carousel-cell; */
+  padding: 0%;
+}
+.shopBybrandRaus:before {
+  display: block;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+
+  /* content: counter(carousel-cell);  */
+  line-height: 120px;
+  font-size: 80px;
+  /* color: white; */
+}
+.mySliderBrRaus {
+  width: 100%;
+  height: 100%;
+
+  /* box-sizing: border-box; */
+  /* border: 2px solid rgb(219, 141, 154); */
+  align-items: center;
+}
+
+.ImageBrandRaus {
+  height: 100%;
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+/* shop by brand name css end dynamics */
+
+/* stactic page css start */
+
+#brandNameRaus {
+  font-size: 25px;
+  margin-left: 72px;
+}
+#shopByBrandStaticRaus {
+  display: flex;
+  width: 90%;
+  height: 300px;
+  gap: 10px;
+
+  margin: auto;
+  margin-top: 50px;
+}
+.staticShopRaus {
+  display: flex;
+  width: 25%;
+  height: 100%;
+  /* border: 1px solid blue; */
+}
+.imgStaticShopRaus {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* viv opp img start css */
+#vivOppoDivRaus {
+  display: flex;
+  gap: 15px;
+  /* border: 1px solid rgb(105, 31, 31); */
+  height: 350px;
+  width: 90%;
+  margin: auto;
+  margin-top: 65px;
+}
+
+.vivOppoRaus {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  cursor: pointer;
+  /* border: 1px solid yellow; */
+}
+
+.imgVivOppoRaus {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 15px;
+}
+/* viv opp img end css */
+
+/* stactic page css end */
+/* shop by brand name css end */
+
+/* popular css start  */
+
+#gvAccessoriesbox {
+  height: 600px;
+  width: 100%;
+  /* border: 2px solid green; */
+  margin-top: 6%;
+}
+#gvHeading {
+  color: white;
+  margin-left: 5%;
+  /* border: 2px solid green; */
+}
+#gvaccBox {
+  height: 90%;
+  width: 100%;
+  margin: auto;
+  /* border: 2px solid green; */
+}
+/* external css: flickity.css */
+
+* {
+  box-sizing: border-box;
+}
+
+.carousel-cell {
+  width: 25%;
+  margin: 0;
+  /* margin-right: 10px; */
+  /* background: rgb(44, 44, 44); */
+  /* background-color: #121212; */
+  border-radius: 5px;
+  /* counter-increment: carousel-cell; */
+  padding: 3%;
+  /* border: 1px solid blue; */
+  height: 500px;
+}
+
+
+
+/* cell number */
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  /* content: counter(carousel-cell);  */
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+}
+/* flickity ends here */
+.carousel {
+  margin: auto;
+  width: 90%;
+  /* border: 3px solid red; */
+  height: 500px;
+}
+
+.popular_products {
+  color: white;
+  /* border: 1px solid yellow; */
+  height: 400px;
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.popular_products > img {
+  height: 180px;
+  /* align-items: auto; */
+  margin-top: 0px;
+}
+.popular_products > p {
+  text-align: justify;
+  text-justify: auto;
+}
+#gvaccBox {
+  margin-top: 5%;
+  padding: 5px;
+}
+.gvchecked {
+  color: #00e9bf;
+  font-size: 40px;
+}
+.btnAddCart {
+  border-radius: 3px;
+  background: none;
+  color: white;
+  cursor: pointer;
+}
+/* Eaditions css end */
+
+/* limited time deal Start css */
+
+.limitedTimeDelasNameRaus {
+  font-size: 25px;
+  margin-left: 72px;
+  margin-top: 55px;
+}
+
+.limitedDealsRaus {
+  top: 75px;
+  margin: auto;
+  width: 90%;
+  height: 450px;
+  /* border: 2px solid red; */
+}
+
+.limitedTimeRaus {
+  width: 25%;
+  margin: 0;
+
+  border-radius: 5px;
+  padding: 3%;
+  height: 450px;
+  /* border: 2px solid yellow; */
+}
+.limitedTimeRaus:before {
+  display: block;
+  text-align: center;
+  line-height: 180px;
+  font-size: 70px;
+  color: white;
+}
+.timeDealsRaus {
+  color: white;
+  /* border: 1px solid brown; */
+  height: 380px;
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.imgaeLimitedRaus {
+  height: 180px;
+  margin-top: 0%;
+  /* padding: 2%; */
+}
+.TitleRaus,
+.timeDealRaus {
+  text-align: justify;
+  text-justify: auto;
+}
+.timeRaus {
+  color: #00e9bf;
+  font-size: 40px;
+}
+.btnDealsRaus {
+  background: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  /* border: none; */
+}
+
+/* limited time deal end css */
+
+
+/* static page headphone and sum deal accssories start css --> */
+ #accssoriesDealsRaus{
+   width: 90%;
+   height: 200px;
+  /* border: 2px solid red; */
+  display: flex;
+  gap: 10px; 
+  margin: auto;
+  margin-top:120px;
+
+}
+
+.headPhoneCoverRaus{
+  width: 25%;
+  /* border: 2px solid yellow; */
+  height: 100%;
+  cursor: pointer;
+}
+.imgcoverDealsRaus{
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+/* static page headphone and sum deal accssories end css --> */
+
+/* <!-- track in your style css start -> */
+#getYourlifeRaus {
+  display: flex;
+  
+  height: 350px;
+  width: 90%;
+  margin: auto;
+  margin-top: 45px;
+  cursor: pointer;
+}
+
+.imageTrackStyleRaus {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 15px;
+} 
+/* <!-- track in your style css end-> */
+/* #buyNowRaus {
+  display: flex;
+  
+  height: 350px;
+  width: 90%;
+  margin: auto;
+  margin-top: 45px;
+  cursor: pointer;
+}
+
+.imgBuyNowRaus {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 15px;
+} */
+/* upgrade your stmart phone start css  */
+#upgradeSmartRaus {
+  display: flex;
+  
+  height: 350px;
+  width: 90%;
+  margin: auto;
+  margin-top: 45px;
+  cursor: pointer;
+}
+
+.imgItsSmartRaus {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 15px;
+} 
+/* upgrade your stmart phone end css  */
+
+
+/* text specific start */
+#phoneTextRaus {
+  font-size: 25px;
+  margin-left: 72px;
+  margin-top: 15px;
+}
+
+#phoneDivRaus{
+  width: 90%;
+  height: 70px;
+  /* border: 1px solid red; */
+  margin: auto;
+  margin-top: 15px;
+}
+#phoneTextRaus1{
+  text-align: justify;
+  text-justify: auto;
+  font-size: 18px;
+}
+
+#phoneDivRaus1{
+  width: 90%;
+  height: 120px;
+  /* border: 1px solid red; */
+  margin: auto;
+  margin-top: 15px;
+}
+#phoneTextRaus2{
+  text-align: justify;
+  text-justify: auto;
+  font-size: 18px;
+}
+
+#importantMobileRaus{
+  width: 90%;
+  height: 120px;
+  /* border: 1px solid red; */
+  margin: auto;
+  margin-top: 15px;
+}
+.phoneTextRaus2{
+  text-align: justify;
+  text-justify: auto;
+  font-size: 18px;
+}
+#importMobileRaus{
+  font-size: 25px;
+  margin: 0px;
+  /* top:0; */
+  line-height: 0;
+}
+
+#imporTechRaus{
+  width: 90%;
+  height: 120px;
+  /* border: 1px solid red; */
+  margin: auto;
+  margin-top: 55px;
+}
+.techRaus{
+  text-align: justify;
+  text-justify: auto;
+  font-size: 18px;
+}
+#importTechRaus{
+  font-size: 25px;
+  margin: 0px;
+  /* top:0; */
+  line-height: 0;
+}
+
+#textTechRaus1{
+  width: 90%;
+  height: 130px;
+  /* border: 1px solid red; */
+  margin: auto;
+  margin-top: 35px;
+}
+#textBigTechRaus1{
+  width: 90%;
+  height: 140px;
+  /* border: 1px solid red; */
+  margin: auto;
+  margin-top: 35px;
+}
+#textSmallTechRaus1{
+  width: 90%;
+  height: 90px;
+  /* border: 1px solid red; */
+  margin: auto;
+  margin-top: 65px;
+}
+#textSmallTechRaus2{
+  width: 90%;
+  height: 60px;
+  /* border: 1px solid red; */
+  margin: auto;
+  margin-top: 85px;
+}
+.textTechoRaus{
+  text-align: justify;
+  text-justify: auto;
+  font-size: 18px;
+}
+
+
+/* text specific start */
+
+/* best mobile start css */
+
+#bestMobileTextRaus{
+  width: 90%;
+  height: 150px;
+  /* border: 1px solid red; */
+  margin: auto;
+  margin-top: 55px;
+}
+.bestTextMoRaus{
+  text-align: justify;
+  text-justify: auto;
+  font-size: 18px;
+}
+#bestTextRaus{
+  font-size: 25px;
+  margin: 0px;
+  /* top:0; */
+  line-height: 0;
+}
+
+/* best mobile end css */
+
+/* thiking store start css */
+#thinkingStoreRaus{
+  width: 90%;
+  height: 150px;
+  /* border: 1px solid red; */
+  margin: auto;
+  margin-top: 105px;
+}
+.yourTextStoreRaus{
+  text-align: justify;
+  text-justify: auto;
+  font-size: 18px;
+}
+#textStore{
+  font-size: 25px;
+  margin: 0px;
+  /* top:0; */
+  line-height: 0;
+}
+
+
+#smallThinkRaus{
+  width: 90%;
+  height: 60px;
+  /* border: 1px solid red; */
+  margin: auto;
+  margin-top: 0px;
+}
+#smallTextThinkRaus,.smallTextBoRaus{
+  text-align: justify;
+  text-justify: auto;
+  font-size: 18px;
+}
+/* thiking store start end */
+

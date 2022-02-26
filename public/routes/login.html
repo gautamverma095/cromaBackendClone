@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/21bc9a918c.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+      * {
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+      body {
+        background-color: black;
+        height: 100vh;
+        overflow: hidden;
+      }
+      #logiForm {
+        transform: translate(0%, 0%);
+        transition: all 1s;
+        background: white;
+        box-sizing: border-box;
+        border-radius: 25px;
+        border: 4px solid white;
+        padding: 5px;
+        width: 80%;
+        cursor: pointer;
+        margin: auto;
+      }
+      input {
+        background-color: #dddddd;
+        width: 100%;
+        height: 42.5px;
+        line-height: 30px;
+        outline: 0;
+        border: 0;
+        display: none;
+        font-size: 1em;
+        border-radius: 20px;
+        padding: 0 20px;
+        display: block;
+        margin-top: 15px;
+      }
+      #mainBox {
+        width: 400px;
+        margin: auto;
+        padding: 10px 10px 56px 10px;
+        margin-top: 50px;
+        box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+        border-radius: 10px;
+        background-color: white;
+        text-align: center;
+      }
+      #login {
+        text-align: center;
+      }
+      h2 {
+        margin-bottom: 5px;
+      }
+      button {
+        width: 100%;
+        height: 42.5px;
+        line-height: 30px;
+        outline: 0;
+        border: 0;
+        display: none;
+        font-size: 2em;
+        border-radius: 20px;
+        padding: 0 20px;
+        display: block;
+        margin-top: 15px;
+        font-weight: 700;
+        margin-bottom: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="mainBox">
+      <h2><i class="fas fa-user"></i> Login</h2>
+      <div id="logiForm">
+        <input type="mail" required placeholder="Email Adress..." id="email" />
+        <input
+          type="password"
+          required
+          placeholder="Password..."
+          id="password"
+        />
+        <button style="background-color: #f5c518" id="log">Login</button>
+        <hr style="width: 80%" />
+        <button
+          style="color: #f5c518; background-color: black"
+          onclick="window.open('./register.html','_self')"
+          >Register</button
+        >
+      </div>
+    </div>
+  </body>
+  <script>
+    document.querySelector("#log").addEventListener("click", Login);
+    async function Login(e) {
+      e.preventDefault();
+      let bodyLogin = {
+        password: document.querySelector("#password").value,
+        email: document.querySelector("#email").value,
+      };
+      bodyLogin = JSON.stringify(bodyLogin);
+      let url = `/log`;
+      try {
+        let res = await fetch(url, {
+          method: "POST",
+          body: bodyLogin,
+          headers: {
+            "content-Type": "application/json",
+          },
+        });
+        let data = await res.json();
+        if (!data.message) {
+          saveLoc(data);
+        } else alert(data.message);
+      } catch (err) {
+        console.log(err);
+      }
+    }
+    function saveLoc(data) {
+      alert("Login Succesful");
+      localStorage.setItem("user", JSON.stringify(data.user));
+      window.open("../index.html", "_self");
+    }
+  </script>
+</html>
